@@ -1,45 +1,22 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Svelte 开发从入门到精通',
-  description: '一本关于现代前端框架 Svelte 的完全指南，Svelte 5 新特性，完整项目实战，从入门到精通',
+  title: 'Svelte 教程 2026',
+  description: '最全 Svelte 教程！涵盖 Svelte 5 Runes 响应式系统、21 章节完整教程 + 3 个实战项目',
   
-  // 确保 URL 干净（移除 .html）
   cleanUrls: true,
   
-  // SEO 配置
   head: [
-    // 基础 SEO
-    ['meta', { name: 'keywords', content: 'Svelte, Svelte 5, Svelte教程, Svelte入门, 前端框架, Web开发, JavaScript框架' }],
+    ['meta', { name: 'keywords', content: 'Svelte教程, Svelte 5教程, Svelte入门, 前端框架, JavaScript框架' }],
     ['meta', { name: 'author', content: 'Nix_____（码徒）' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
-    
-    // Open Graph / Facebook
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: 'Svelte 开发从入门到精通' }],
     ['meta', { property: 'og:locale', content: 'zh-CN' }],
-    
-    // Twitter Card
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    
-    // 验证标签（需要替换为实际验证码）
-    ['meta', { name: 'baidu-site-verification', content: 'your-code' }],
-    ['meta', { name: 'google-site-verification', content: 'your-code' }],
-    
-    // Favicon
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ],
   
   themeConfig: {
-    siteTitle: 'Svelte 开发从入门到精通',
-    
-    // 本地搜索
-    search: {
-      provider: 'local',
-      options: {
-        detailedView: true
-      }
-    },
+    siteTitle: 'Svelte 教程 2026',
     
     nav: [
       { text: '首页', link: '/' },
@@ -53,6 +30,7 @@ export default defineConfig({
       '/chapters/part1/': [
         {
           text: '第一篇：入门篇',
+          collapsed: false,
           items: [
             { text: '第1章 Svelte 简介与开发环境', link: '/chapters/part1/ch01-introduction/' },
             { text: '第2章 Svelte 基础语法', link: '/chapters/part1/ch02-basic-syntax/' },
@@ -66,15 +44,16 @@ export default defineConfig({
       '/chapters/part2/': [
         {
           text: '第二篇：进阶篇',
+          collapsed: false,
           items: [
-            { text: '第6章 状态管理：Store 深度应用', link: '/chapters/part2/ch06-stores/' },
-            { text: '第7章 SvelteKit 路由系统', link: '/chapters/part2/ch07-routing/' },
-            { text: '第8章 表单处理与验证', link: '/chapters/part2/ch08-forms/' },
-            { text: '第9章 HTTP 请求与 API 调用', link: '/chapters/part2/ch09-http/' },
-            { text: '第10章 动画与过渡效果', link: '/chapters/part2/ch10-animations/' },
-            { text: '第11章 插槽与上下文', link: '/chapters/part2/ch11-slots-context/' },
-            { text: '第12章 错误处理与边界管理', link: '/chapters/part2/ch12-error-handling/' },
-            { text: '第13章 性能优化策略', link: '/chapters/part2/ch13-performance/' }
+            { text: '第6章 Store', link: '/chapters/part2/ch06-stores/' },
+            { text: '第7章 路由', link: '/chapters/part2/ch07-routing/' },
+            { text: '第8章 表单', link: '/chapters/part2/ch08-forms/' },
+            { text: '第9章 HTTP', link: '/chapters/part2/ch09-http/' },
+            { text: '第10章 动画', link: '/chapters/part2/ch10-animations/' },
+            { text: '第11章 插槽', link: '/chapters/part2/ch11-slots-context/' },
+            { text: '第12章 错误处理', link: '/chapters/part2/ch12-error-handling/' },
+            { text: '第13章 性能优化', link: '/chapters/part2/ch13-performance/' }
           ]
         }
       ],
@@ -82,10 +61,11 @@ export default defineConfig({
       '/chapters/part3/': [
         {
           text: '第三篇：实战篇',
+          collapsed: false,
           items: [
-            { text: '实战项目一：Todo 待办应用', link: '/chapters/part3/project1-todo/' },
-            { text: '实战项目二：博客系统', link: '/chapters/part3/project2-blog/' },
-            { text: '实战项目三：电商前台', link: '/chapters/part3/project3-ecommerce/' }
+            { text: 'Todo 应用', link: '/chapters/part3/project1-todo/' },
+            { text: '博客系统', link: '/chapters/part3/project2-blog/' },
+            { text: '电商前台', link: '/chapters/part3/project3-ecommerce/' }
           ]
         }
       ],
@@ -93,12 +73,13 @@ export default defineConfig({
       '/chapters/part4/': [
         {
           text: '第四篇：精通篇',
+          collapsed: false,
           items: [
-            { text: '第17章 测试策略与实践', link: '/chapters/part4/ch17-testing/' },
-            { text: '第18章 部署与 CI/CD', link: '/chapters/part4/ch18-deployment/' },
-            { text: '第19章 Svelte 5 新特性与迁移指南', link: '/chapters/part4/ch19-svelte5/' },
-            { text: '第20章 最佳实践与设计模式', link: '/chapters/part4/ch20-best-practices/' },
-            { text: '第21章 附录：速查手册', link: '/chapters/part4/ch21-appendix/' }
+            { text: '第17章 测试', link: '/chapters/part4/ch17-testing/' },
+            { text: '第18章 部署', link: '/chapters/part4/ch18-deployment/' },
+            { text: '第19章 Svelte 5', link: '/chapters/part4/ch19-svelte5/' },
+            { text: '第20章 最佳实践', link: '/chapters/part4/ch20-best-practices/' },
+            { text: '第21章 附录', link: '/chapters/part4/ch21-appendix/' }
           ]
         }
       ]
@@ -114,9 +95,6 @@ export default defineConfig({
     },
     
     outline: 'deep',
-    outlineTitle: '目录',
-    
-    prev: '← 上一页',
-    next: '下一页 →'
+    outlineTitle: '目录'
   }
 })
