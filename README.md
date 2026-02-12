@@ -9,6 +9,30 @@
 
 ---
 
+## 🚀 快速开始
+
+### 在线阅读
+
+- **GitHub Pages**: https://taosin.github.io/svelte-book/
+- **Vercel**: https://svelte-book-taosin.vercel.app
+- **Netlify**: https://svelte-book.netlify.app
+
+### 本地阅读
+
+```bash
+# 克隆仓库
+git clone https://github.com/taosin/svelte-book.git
+cd svelte-book
+
+# 安装依赖
+npm install
+
+# 本地预览
+npm run dev
+```
+
+---
+
 ## 📖 目录
 
 ### 第一篇：入门篇
@@ -60,6 +84,8 @@
 ### ✅ 最佳实践
 总结业界最佳实践，包含性能优化、测试策略、代码规范等。
 
+---
+
 ## 📋 阅读建议
 
 **初学者**：按顺序阅读，每章完成练习题。
@@ -68,20 +94,130 @@
 
 **项目驱动**：可以直接从实战篇开始，边做项目边学习。
 
-## 🔗 配套资源
+---
 
-- **源码仓库**：https://github.com/taosin/svelte-book-examples
-- **在线演示**：https://svelte-book-examples.vercel.app
-- **勘误反馈**：https://github.com/taosin/svelte-book-examples/issues
+## 🔧 开发命令
 
-## 💬 致谢
+| 命令 | 说明 |
+|------|------|
+| `npm install` | 安装依赖 |
+| `npm run dev` | 本地开发服务器 |
+| `npm run build` | 构建生产版本 |
+| `npm run preview` | 预览生产构建 |
+| `npm run deploy` | 部署到 GitHub Pages |
+
+---
+
+## 🚀 多平台部署
+
+本书配置了**一键部署到多个平台**的功能！
+
+### 平台列表
+
+| 平台 | 状态 | 访问地址 |
+|------|------|----------|
+| GitHub Pages | ✅ 自动 | `https://<username>.github.io/svelte-book/` |
+| Vercel | ✅ 自动 | `https://svelte-book.vercel.app` |
+| Netlify | ✅ 自动 | `https://svelte-book.netlify.app` |
+
+### 部署方式
+
+只需推送到 GitHub，自动部署到所有平台：
+
+```bash
+# 1. 提交代码
+git add .
+git commit -m "Update content"
+git push origin main
+
+# 2. 等待 CI/CD 自动部署
+# - GitHub Actions 构建并推送到 gh-pages
+# - Vercel 自动检测并部署
+# - Netlify 自动检测并部署
+```
+
+### 手动部署
+
+```bash
+# 部署到所有平台
+./deploy.sh
+
+# 或分别部署
+npm run build                    # 构建
+npx gh-pages -d dist            # GitHub Pages
+vercel --prod                    # Vercel
+netlify deploy --prod --dir=dist # Netlify
+```
+
+### 首次设置
+
+```bash
+# 1. GitHub Pages (仓库 Settings 中启用)
+# Settings → Pages → Source: GitHub Actions
+
+# 2. Vercel (首次需要连接仓库)
+# https://vercel.com → Import Project → Connect GitHub
+
+# 3. Netlify (首次需要连接仓库)
+# https://netlify.com → Add new site → Import an existing project
+```
+
+---
+
+## 📂 项目结构
+
+```
+svelte-book/
+├── docs/                    # VitePress 文档配置
+│   ├── .vitepress/
+│   │   └── config.mjs      # 文档配置
+│   └── index.md             # 首页
+├── chapters/                # 章节内容
+│   ├── part1/              # 入门篇
+│   ├── part2/              # 进阶篇
+│   ├── part3/              # 实战篇
+│   └── part4/              # 精通篇
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # CI/CD 配置
+├── deploy.sh               # 部署脚本
+├── package.json
+└── README.md
+```
+
+---
+
+## 📦 技术栈
+
+- **VitePress** - 静态网站生成器
+- **Vite** - 构建工具
+- **GitHub Actions** - CI/CD
+- **Markdown** - 内容格式
+
+---
+
+## 💬 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本仓库
+2. 创建分支 (`git checkout -b feature/amazing`)
+3. 提交更改 (`git commit -am 'Add amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing`)
+5. 创建 Pull Request
+
+---
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE)
+
+---
+
+## 🙏 致谢
 
 感谢 Svelte 团队创造了如此优秀的框架，感谢所有为本书提供反馈的读者。
 
 ---
 
 **开始你的 Svelte 之旅吧！** 🚀
-
----
-
-*本书采用 Markdown 编写，可以使用 VS Code、Typora 或任何 Markdown 编辑器阅读。*
