@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "Svelte 开发"
-  text: "从入门到精通
-  tagline: 一本关于现代前端框架 Svelte 的完全指南
+  text: "从入门到精通"
+  tagline: "一本关于现代前端框架 Svelte 的完全指南"
   actions:
     - theme: brand
       text: 开始阅读
@@ -14,7 +14,7 @@ hero:
       link: https://svelte-book-examples.vercel.app
     - theme: alt
       text: 源码仓库
-      link: https://github.com/taosin/svelte-book-examples
+      link: https://github.com/svelte-cn/Svelte-Book
 
 features:
   - title: 系统性
