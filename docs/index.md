@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /chapters/part1/ch01-introduction
+      link: /chapters/part1/ch01-introduction/
     - theme: alt
       text: 在线演示
-      link: https://svelte-book-examples.vercel.app
+      link: /chapters/part1/ch01-introduction/
     - theme: alt
       text: 源码仓库
       link: https://github.com/svelte-cn/Svelte-Book
