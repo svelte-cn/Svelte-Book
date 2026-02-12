@@ -2,7 +2,7 @@
 
 > 一本关于现代前端框架 Svelte 的完全指南
 
-**作者：** WebResume Team  
+**作者：** Nix_____（码徒）  
 **版本：** 1.0.0  
 **发布日期：** 2026-02-12  
 **许可证：** MIT License
@@ -13,16 +13,16 @@
 
 ### 在线阅读
 
-- **GitHub Pages**: https://taosin.github.io/svelte-book/
-- **Vercel**: https://svelte-book-taosin.vercel.app
+- **GitHub Pages**: https://svelte-cn.github.io/Svelte-Book/
+- **Vercel**: https://svelte-book.vercel.app
 - **Netlify**: https://svelte-book.netlify.app
 
 ### 本地阅读
 
 ```bash
 # 克隆仓库
-git clone https://github.com/taosin/svelte-book.git
-cd svelte-book
+git clone https://github.com/svelte-cn/Svelte-Book.git
+cd Svelte-Book
 
 # 安装依赖
 npm install

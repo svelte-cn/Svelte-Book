@@ -71,12 +71,12 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/taosin/svelte-book' }
+      { icon: 'github', link: 'https://github.com/svelte-cn/Svelte-Book' }
     ],
 
     footer: {
       message: 'MIT License',
-      copyright: 'Copyright © 2026 WebResume Team'
+      copyright: 'Copyright © 2026 Nix_____（码徒）'
     }
   }
 })

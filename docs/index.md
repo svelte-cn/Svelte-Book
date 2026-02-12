@@ -26,5 +26,5 @@ features:
   - title: 最佳实践
     details: 总结业界最佳实践，包含性能优化、测试策略、代码规范等
 
-footer: MIT License | Copyright © 2026 WebResume Team
+footer: MIT License | Copyright © 2026 Nix_____（码徒）
 ---
