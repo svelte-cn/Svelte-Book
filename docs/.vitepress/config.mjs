@@ -2,13 +2,44 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Svelte 开发从入门到精通',
-  description: '一本关于现代前端框架 Svelte 的完全指南',
+  description: '一本关于现代前端框架 Svelte 的完全指南，Svelte 5 新特性，完整项目实战，从入门到精通',
   
   // 确保 URL 干净（移除 .html）
   cleanUrls: true,
   
+  // SEO 配置
+  head: [
+    // 基础 SEO
+    ['meta', { name: 'keywords', content: 'Svelte, Svelte 5, Svelte教程, Svelte入门, 前端框架, Web开发, JavaScript框架' }],
+    ['meta', { name: 'author', content: 'Nix_____（码徒）' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+    
+    // Open Graph / Facebook
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Svelte 开发从入门到精通' }],
+    ['meta', { property: 'og:locale', content: 'zh-CN' }],
+    
+    // Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    
+    // 验证标签（需要替换为实际验证码）
+    ['meta', { name: 'baidu-site-verification', content: 'your-code' }],
+    ['meta', { name: 'google-site-verification', content: 'your-code' }],
+    
+    // Favicon
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+  ],
+  
   themeConfig: {
-    siteTitle: 'Svelte 入门到精通',
+    siteTitle: 'Svelte 开发从入门到精通',
+    
+    // 本地搜索
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: true
+      }
+    },
     
     nav: [
       { text: '首页', link: '/' },
@@ -80,6 +111,12 @@ export default defineConfig({
     footer: {
       message: 'MIT License',
       copyright: 'Copyright © 2026 Nix_____（码徒）'
-    }
+    },
+    
+    outline: 'deep',
+    outlineTitle: '目录',
+    
+    prev: '← 上一页',
+    next: '下一页 →'
   }
 })

@@ -1,0 +1,5 @@
+# robots.txt for Svelte Book
+User-agent: *
+Allow: /
+
+Sitemap: https://svelte-book.vercel.app/sitemap.xml
