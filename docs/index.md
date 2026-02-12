@@ -4,18 +4,6 @@ layout: home
 title: Svelte 教程 2026 | Svelte 5 完全指南 | 从入门到精通
 description: 最全 Svelte 教程！涵盖 Svelte 5 Runes 响应式系统、21 章节完整教程 + 3 个实战项目。零基础入门到精通！
 
-head:
-  - tag: title
-    content: Svelte 教程 2026 | Svelte 5 完全指南 | 从入门到精通
-  - tag: meta
-    attrs:
-      property: og:title
-      content: Svelte 教程 2026 | Svelte 5 完全指南
-  - tag: meta
-    attrs:
-      property: og:description
-      content: 最全 Svelte 教程！涵盖 Svelte 5 Runes 响应式系统、21 章节完整教程 + 3 个实战项目
-
 hero:
   name: "Svelte 教程"
   text: "从入门到精通"
