@@ -4,6 +4,9 @@ export default defineConfig({
   title: 'Svelte 开发从入门到精通',
   description: '一本关于现代前端框架 Svelte 的完全指南',
   
+  // 确保 URL 干净
+  cleanUrls: true,
+  
   themeConfig: {
     siteTitle: 'Svelte 入门到精通',
     
