@@ -1,35 +1,21 @@
-# Svelte 开发从入门到精通
+# Svelte 教程 2026 | Svelte 5 完全指南 | 从入门到精通
 
-> 一本关于现代前端框架 Svelte 的完全指南
+> 最全 Svelte 教程！涵盖 Svelte 5 Runes 响应式系统、21 章节完整教程 + 3 个实战项目（Todo/博客/电商）。零基础入门到精通！
 
 **作者：** Nix_____（码徒）  
 **版本：** 1.0.0  
-**发布日期：** 2026-02-12  
-**许可证：** MIT License
+**更新：** 2026-02-12  
+**许可证：** MIT License  
 
 ---
 
-## 🚀 快速开始
+## 🚀 在线阅读
 
-### 在线阅读
-
-- **Vercel**: https://svelte-book.vercel.app
-- **GitHub Pages**: https://svelte-cn.github.io/Svelte-Book/
-- **Netlify**: https://svelte-book.netlify.app
-
-### 本地阅读
-
-```bash
-# 克隆仓库
-git clone https://github.com/svelte-cn/Svelte-Book.git
-cd Svelte-Book
-
-# 安装依赖
-npm install
-
-# 本地预览
-npm run dev
-```
+| 平台 | 地址 |
+|------|------|
+| **Vercel** | https://svelte-book.vercel.app |
+| GitHub Pages | https://svelte-cn.github.io/Svelte-Book/ |
+| Netlify | https://svelte-book.netlify.app |
 
 ---
 
@@ -70,29 +56,11 @@ npm run dev
 
 ---
 
-## 🎯 本书特色
+## 🎯 SEO 关键词
 
-### ✅ 系统性
-从基础到精通，循序渐进，涵盖 Svelte/SvelteKit 的所有核心知识点。
+**主要关键词：** Svelte教程, Svelte 5教程, Svelte入门, Svelte完全指南
 
-### ✅ 实战导向
-每个章节都有代码示例，三个完整项目实战，让你在实践中掌握 Svelte。
-
-### ✅ 前沿技术
-涵盖 Svelte 5 最新特性，包括 Runes（符文）响应式系统。
-
-### ✅ 最佳实践
-总结业界最佳实践，包含性能优化、测试策略、代码规范等。
-
----
-
-## 📋 阅读建议
-
-**初学者**：按顺序阅读，每章完成练习题。
-
-**有经验者**：可跳过入门篇，直接阅读感兴趣的部分。
-
-**项目驱动**：可以直接从实战篇开始，边做项目边学习。
+**长尾关键词：** SvelteKit教程, Runes响应式系统, Svelte组件, Svelte状态管理, Svelte实战项目
 
 ---
 
@@ -103,7 +71,7 @@ Svelte-Book/
 ├── docs/                      # 📚 VitePress 文档
 │   ├── .vitepress/
 │   │   └── config.mjs        # 文档配置
-│   ├── index.md              # 首页
+│   ├── index.md               # 首页
 │   └── chapters/              # 章节内容
 │       ├── part1/            # 入门篇
 │       ├── part2/            # 进阶篇
@@ -119,59 +87,22 @@ Svelte-Book/
 
 ---
 
-## 🔧 开发命令
+## 🚀 推广建议
 
-| 命令 | 说明 |
-|------|------|
-| `npm install` | 安装依赖 |
-| `npm run dev` | 本地开发服务器 |
-| `npm run build` | 构建生产版本 |
-| `npm run preview` | 预览生产构建 |
-| `npm run deploy` | 部署到 GitHub Pages |
+### 1. GitHub Stars ⭐
+访问 https://github.com/svelte-cn/Svelte-Book/stars 点击星标，提升搜索排名！
 
----
+### 2. 搜索引擎提交
 
-## 🚀 多平台部署
+- **Google**: https://search.google.com/search-console
+- **百度**: https://ziyuan.baidu.com
+- **Bing**: https://www.bing.com/webmasters
 
-本书配置了**一键部署到多个平台**的功能！
+### 3. 社交媒体推广
 
-### 平台列表
-
-| 平台 | 状态 | 访问地址 |
-|------|------|----------|
-| Vercel | ✅ 自动 | https://svelte-book.vercel.app |
-| GitHub Pages | ✅ 自动 | https://svelte-cn.github.io/Svelte-Book/ |
-| Netlify | ✅ 自动 | https://svelte-book.netlify.app |
-
-### 部署方式
-
-只需推送到 GitHub，自动部署到所有平台：
-
-```bash
-# 1. 提交代码
-git add .
-git commit -m "Update content"
-git push origin main
-
-# 2. 等待 CI/CD 自动部署
-# - GitHub Actions 构建并推送到 gh-pages
-# - Vercel 自动检测并部署
-# - Netlify 自动检测并部署
-```
-
-### 手动部署
-
-```bash
-# 部署到所有平台
-./deploy.sh
-```
-
-### 首次设置
-
-```bash
-# Vercel: https://vercel.com → Import Project → 选择 svelte-cn/Svelte-Book
-# Netlify: https://netlify.com → Add new site → Import an existing project
-```
+- 分享到 Twitter、微博、知乎
+- 发布到掘金、CSDN、V2EX
+- 提交到 Product Hunt（英文）
 
 ---
 
@@ -190,12 +121,6 @@ git push origin main
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE)
-
----
-
-## 🙏 致谢
-
-感谢 Svelte 团队创造了如此优秀的框架，感谢所有为本书提供反馈的读者。
 
 ---
 
