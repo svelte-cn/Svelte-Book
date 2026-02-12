@@ -1,0 +1,117 @@
+/* Svelte 官方主题配色 - 基于 svelte.dev */
+:root {
+  /* Svelte Orange 主要品牌色 */
+  --vp-c-brand-1: #ff3e00;
+  --vp-c-brand-2: #ff5722;
+  --vp-c-brand-3: #ff7043;
+  --vp-c-brand-soft: rgba(255, 62, 0, 0.14);
+
+  /* 主题色变体 */
+  --vp-c-brand-light: #ff7043;
+  --vp-c-brand-dark: #e65100;
+  --vp-c-brand-darker: #bf360c;
+
+  /* 覆盖 VitePress 默认颜色 */
+  --vp-c-brand: var(--vp-c-brand-1);
+  --vp-c-brand-light: var(--vp-c-brand-light);
+  --vp-c-brand-dark: var(--vp-c-brand-dark);
+  --vp-c-brand-darker: var(--vp-c-brand-darker);
+  --vp-c-brand-soft: var(--vp-c-brand-soft);
+
+  /* 强调色 */
+  --vp-c-accent: var(--vp-c-brand-1);
+  --vp-c-accent-light: var(--vp-c-brand-light);
+  --vp-c-accent-dark: var(--vp-c-brand-dark);
+  --vp-c-accent-darker: var(--vp-c-brand-darker);
+  --vp-c-accent-soft: var(--vp-c-brand-soft);
+
+  /* 代码高亮 - 参考 Svelte 官网 */
+  --vp-code-block-bg: #1a1a1a;
+  --vp-code-inline-bg: rgba(255, 62, 0, 0.1);
+  --vp-code-inline-color: var(--vp-c-brand-1);
+
+  /* 链接颜色 */
+  --vp-c-text-2: #666;
+  --vp-c-text-3: #888;
+}
+
+/* 深色模式下的 Svelte 主题 */
+.dark {
+  --vp-c-brand-1: #ff7043;
+  --vp-c-brand-2: #ff8a65;
+  --vp-c-brand-3: #ffa726;
+  --vp-c-brand-soft: rgba(255, 112, 67, 0.14);
+
+  --vp-code-block-bg: #0d0d0d;
+}
+
+/* 导航栏样式 */
+.VPNavBar {
+  border-bottom: 1px solid rgba(255, 62, 0, 0.1) !important;
+}
+
+.VPNavBar-title {
+  font-weight: 600 !important;
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  border-right: 1px solid rgba(255, 62, 0, 0.1) !important;
+}
+
+/* 目录大纲样式 */
+.VPLocalDocOutline {
+  border-left: 2px solid var(--vp-c-brand-1) !important;
+}
+
+/* 代码块标题样式 */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px !important;
+}
+
+.vp-doc div[class*='language-'] .title {
+  background: var(--vp-c-brand-1) !important;
+  border-radius: 6px 6px 0 0 !important;
+}
+
+/* 引用块样式 */
+.vp-doc blockquote {
+  border-left-color: var(--vp-c-brand-1) !important;
+  background: var(--vp-c-brand-soft) !important;
+}
+
+/* 首页 Hero 区域 */
+.VPHomeHero {
+  text-align: center;
+}
+
+.VPHomeHero .title {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* 按钮样式 */
+.VPButton {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPButton.brand {
+  background: var(--vp-c-brand-1) !important;
+  border: none !important;
+}
+
+.VPButton.brand:hover {
+  background: var(--vp-c-brand-2) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(255, 62, 0, 0.3) !important;
+}
+
+/* 搜索框样式 */
+.VPLocalSearchBox {
+  border-radius: 8px !important;
+}

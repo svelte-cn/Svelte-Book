@@ -1,11 +1,12 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Svelte 教程 2026',
-  description: '最全 Svelte 教程！涵盖 Svelte 5 Runes 响应式系统、21 章节完整教程 + 3 个实战项目',
-  
+  title: 'Svelte 教程',
+  description: 'Svelte 5 官方教程 - 21 章节完整教程 + 3 个实战项目',
+  lang: 'zh-CN',
+
   cleanUrls: true,
-  
+
   head: [
     ['meta', { name: 'keywords', content: 'Svelte教程, Svelte 5教程, Svelte入门, 前端框架, JavaScript框架' }],
     ['meta', { name: 'author', content: 'Nix_____（码徒）' }],
@@ -14,10 +15,13 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'zh-CN' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ],
-  
+
   themeConfig: {
-    siteTitle: 'Svelte 教程 2026',
-    
+    siteTitle: 'Svelte 教程',
+
+    // Svelte Logo
+    logo: '/favicon.svg',
+
     nav: [
       { text: '首页', link: '/' },
       { text: '入门篇', link: '/chapters/part1/ch01-introduction/' },
@@ -88,6 +92,36 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/svelte-cn/Svelte-Book' }
     ],
+
+    // 首页配置 - 参考 svelte.dev
+    homePage: {
+      hero: {
+        name: 'Svelte 教程',
+        text: 'Svelte 5 完全指南',
+        tagline: '从入门到精通 - 21 章节完整教程 + 3 个实战项目',
+        actions: [
+          { text: '开始学习 →', link: '/chapters/part1/ch01-introduction/', theme: 'brand' },
+          { text: 'GitHub', link: 'https://github.com/svelte-cn/Svelte-Book' }
+        ]
+      },
+      features: [
+        {
+          title: 'Svelte 5 Runes',
+          details: '全面介绍 Svelte 5 全新的响应式系统，让代码更加简洁高效。',
+          icon: '⚡'
+        },
+        {
+          title: '21 章节完整教程',
+          details: '从基础到进阶，涵盖 Svelte 开发的所有核心概念和最佳实践。',
+          icon: '📚'
+        },
+        {
+          title: '3 个实战项目',
+          details: 'Todo 应用、博客系统、电商前台，通过项目实战巩固所学知识。',
+          icon: '🚀'
+        }
+      ]
+    },
 
     footer: {
       message: 'MIT License',
