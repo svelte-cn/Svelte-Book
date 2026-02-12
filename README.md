@@ -13,8 +13,8 @@
 
 ### 在线阅读
 
-- **GitHub Pages**: https://svelte-cn.github.io/Svelte-Book/
 - **Vercel**: https://svelte-book.vercel.app
+- **GitHub Pages**: https://svelte-cn.github.io/Svelte-Book/
 - **Netlify**: https://svelte-book.netlify.app
 
 ### 本地阅读
@@ -37,36 +37,36 @@ npm run dev
 
 ### 第一篇：入门篇
 
-- [第 1 章 Svelte 简介与开发环境](./chapters/part1/ch01-introduction.md)
-- [第 2 章 Svelte 基础语法](./chapters/part1/ch02-basic-syntax.md)
-- [第 3 章 组件化开发](./chapters/part1/ch03-components.md)
-- [第 4 章 响应式系统深度剖析](./chapters/part1/ch04-reactivity.md)
-- [第 5 章 事件处理与数据绑定](./chapters/part1/ch05-events-binding.md)
+- [第 1 章 Svelte 简介与开发环境](./docs/chapters/part1/ch01-introduction.md)
+- [第 2 章 Svelte 基础语法](./docs/chapters/part1/ch02-basic-syntax.md)
+- [第 3 章 组件化开发](./docs/chapters/part1/ch03-components.md)
+- [第 4 章 响应式系统深度剖析](./docs/chapters/part1/ch04-reactivity.md)
+- [第 5 章 事件处理与数据绑定](./docs/chapters/part1/ch05-events-binding.md)
 
 ### 第二篇：进阶篇
 
-- [第 6 章 状态管理：Store 深度应用](./chapters/part2/ch06-stores.md)
-- [第 7 章 SvelteKit 路由系统](./chapters/part2/ch07-routing.md)
-- [第 8 章 表单处理与验证](./chapters/part2/ch08-forms.md)
-- [第 9 章 HTTP 请求与 API 调用](./chapters/part2/ch09-http.md)
-- [第 10 章 动画与过渡效果](./chapters/part2/ch10-animations.md)
-- [第 11 章 插槽与上下文](./chapters/part2/ch11-slots-context.md)
-- [第 12 章 错误处理与边界管理](./chapters/part2/ch12-error-handling.md)
-- [第 13 章 性能优化策略](./chapters/part2/ch13-performance.md)
+- [第 6 章 状态管理：Store 深度应用](./docs/chapters/part2/ch06-stores.md)
+- [第 7 章 SvelteKit 路由系统](./docs/chapters/part2/ch07-routing.md)
+- [第 8 章 表单处理与验证](./docs/chapters/part2/ch08-forms.md)
+- [第 9 章 HTTP 请求与 API 调用](./docs/chapters/part2/ch09-http.md)
+- [第 10 章 动画与过渡效果](./docs/chapters/part2/ch10-animations.md)
+- [第 11 章 插槽与上下文](./docs/chapters/part2/ch11-slots-context.md)
+- [第 12 章 错误处理与边界管理](./docs/chapters/part2/ch12-error-handling.md)
+- [第 13 章 性能优化策略](./docs/chapters/part2/ch13-performance.md)
 
 ### 第三篇：实战篇
 
-- [第 14 章 实战项目一：Todo 待办应用](./chapters/part3/project1-todo.md)
-- [第 15 章 实战项目二：博客系统](./chapters/part3/project2-blog.md)
-- [第 16 章 实战项目三：电商前台](./chapters/part3/project3-ecommerce.md)
+- [实战项目一：Todo 待办应用](./docs/chapters/part3/project1-todo.md)
+- [实战项目二：博客系统](./docs/chapters/part3/project2-blog.md)
+- [实战项目三：电商前台](./docs/chapters/part3/project3-ecommerce.md)
 
 ### 第四篇：精通篇
 
-- [第 17 章 测试策略与实践](./chapters/part4/ch17-testing.md)
-- [第 18 章 部署与 CI/CD](./chapters/part4/ch18-deployment.md)
-- [第 19 章 Svelte 5 新特性与迁移指南](./chapters/part4/ch19-svelte5.md)
-- [第 20 章 最佳实践与设计模式](./chapters/part4/ch20-best-practices.md)
-- [第 21 章 附录：速查手册](./chapters/part4/ch21-appendix.md)
+- [第 17 章 测试策略与实践](./docs/chapters/part4/ch17-testing.md)
+- [第 18 章 部署与 CI/CD](./docs/chapters/part4/ch18-deployment.md)
+- [第 19 章 Svelte 5 新特性与迁移指南](./docs/chapters/part4/ch19-svelte5.md)
+- [第 20 章 最佳实践与设计模式](./docs/chapters/part4/ch20-best-practices.md)
+- [第 21 章 附录：速查手册](./docs/chapters/part4/ch21-appendix.md)
 
 ---
 
@@ -96,6 +96,29 @@ npm run dev
 
 ---
 
+## 📂 项目结构
+
+```
+Svelte-Book/
+├── docs/                      # 📚 VitePress 文档
+│   ├── .vitepress/
+│   │   └── config.mjs        # 文档配置
+│   ├── index.md              # 首页
+│   └── chapters/              # 章节内容
+│       ├── part1/            # 入门篇
+│       ├── part2/            # 进阶篇
+│       ├── part3/            # 实战篇
+│       └── part4/            # 精通篇
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # CI/CD 配置
+├── deploy.sh                 # 部署脚本
+├── package.json
+└── README.md
+```
+
+---
+
 ## 🔧 开发命令
 
 | 命令 | 说明 |
@@ -116,9 +139,9 @@ npm run dev
 
 | 平台 | 状态 | 访问地址 |
 |------|------|----------|
-| GitHub Pages | ✅ 自动 | `https://<username>.github.io/svelte-book/` |
-| Vercel | ✅ 自动 | `https://svelte-book.vercel.app` |
-| Netlify | ✅ 自动 | `https://svelte-book.netlify.app` |
+| Vercel | ✅ 自动 | https://svelte-book.vercel.app |
+| GitHub Pages | ✅ 自动 | https://svelte-cn.github.io/Svelte-Book/ |
+| Netlify | ✅ 自动 | https://svelte-book.netlify.app |
 
 ### 部署方式
 
@@ -141,58 +164,14 @@ git push origin main
 ```bash
 # 部署到所有平台
 ./deploy.sh
-
-# 或分别部署
-npm run build                    # 构建
-npx gh-pages -d dist            # GitHub Pages
-vercel --prod                    # Vercel
-netlify deploy --prod --dir=dist # Netlify
 ```
 
 ### 首次设置
 
 ```bash
-# 1. GitHub Pages (仓库 Settings 中启用)
-# Settings → Pages → Source: GitHub Actions
-
-# 2. Vercel (首次需要连接仓库)
-# https://vercel.com → Import Project → Connect GitHub
-
-# 3. Netlify (首次需要连接仓库)
-# https://netlify.com → Add new site → Import an existing project
+# Vercel: https://vercel.com → Import Project → 选择 svelte-cn/Svelte-Book
+# Netlify: https://netlify.com → Add new site → Import an existing project
 ```
-
----
-
-## 📂 项目结构
-
-```
-svelte-book/
-├── docs/                    # VitePress 文档配置
-│   ├── .vitepress/
-│   │   └── config.mjs      # 文档配置
-│   └── index.md             # 首页
-├── chapters/                # 章节内容
-│   ├── part1/              # 入门篇
-│   ├── part2/              # 进阶篇
-│   ├── part3/              # 实战篇
-│   └── part4/              # 精通篇
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # CI/CD 配置
-├── deploy.sh               # 部署脚本
-├── package.json
-└── README.md
-```
-
----
-
-## 📦 技术栈
-
-- **VitePress** - 静态网站生成器
-- **Vite** - 构建工具
-- **GitHub Actions** - CI/CD
-- **Markdown** - 内容格式
 
 ---
 
